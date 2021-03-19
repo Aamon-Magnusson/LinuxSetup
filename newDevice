@@ -1,0 +1,17 @@
+#!/bin/bash
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install gcc
+sudo apt-get install gdb
+sudo apt-get install wireshark
+sudo apt-get install net-tools
+
+wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
+# Uncomment the following line if on intel system
+#echo "set disassembly-flavor intel" > ~/.gdbinit
+echo source ~/.gdbinit-gef.py >> ~/.gdbinit
+echo "gef config context.show_registers_raw True" >> ~/.gdbinit
+
+bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
