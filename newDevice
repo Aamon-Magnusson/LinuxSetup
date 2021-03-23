@@ -7,6 +7,7 @@ sudo apt-get upgrade
 
 sudo apt-get install gcc
 sudo apt-get install gdb
+sudo apt-get install python3
 sudo apt-get install wireshark
 sudo apt-get install net-tools
 sudo apt-get install nasm
