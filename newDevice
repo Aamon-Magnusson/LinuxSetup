@@ -6,6 +6,8 @@ sudo apt-get update
 sudo apt-get upgrade
 
 sudo apt-get install gcc
+sudo apt-get install make
+#sudo apt install gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu
 sudo apt-get install gdb
 sudo apt-get install python3
 sudo apt-get install wireshark
