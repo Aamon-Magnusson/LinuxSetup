@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Commented lines cannot be ran on ARM
+
 sudo apt-get update
 sudo apt-get upgrade
 
@@ -13,8 +15,7 @@ sudo apt-get install vim
 
 wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
 echo source ~/.gdbinit-gef.py > ~/.gdbinit
-# Uncomment the following line if on intel system
 #echo "set disassembly-flavor intel" >> ~/.gdbinit
 echo "gef config context.show_registers_raw True" >> ~/.gdbinit
 
-bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
+#bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
