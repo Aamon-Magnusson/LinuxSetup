@@ -23,3 +23,4 @@ echo source ~/.gdbinit-gef.py > ~/.gdbinit
 echo "gef config context.show_registers_raw True" >> ~/.gdbinit
 
 #bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
+#x-www-browser https://www.jetbrains.com/toolbox-app/
