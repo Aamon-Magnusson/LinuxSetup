@@ -11,6 +11,7 @@ sudo apt-get install make
 sudo apt-get install gdb
 sudo apt-get install python3
 sudo apt-get install wireshark
+sudo apt-get install john
 sudo apt-get install net-tools
 sudo apt-get install htop
 sudo apt-get install nasm
