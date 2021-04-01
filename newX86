@@ -9,7 +9,7 @@ sudo apt-get install gcc -y
 sudo apt-get install python3
 sudo apt-get install make -y
 sudo apt install gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu -y
-sudo apt-get install gnu-arm-linux-gnueabihf -y
+sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf -y
 sudo apt-get install gdb -y
 sudo apt-get install python3 -y
 sudo apt-get install wireshark -y
