@@ -33,3 +33,4 @@ update-rc.d -f ssh defaults
 cd /etc/ssh/
 rm ssh_host_*
 dpkg-reconfigure openssh-server
+sudo service ssh restart
