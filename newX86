@@ -27,10 +27,9 @@ sudo apt-get install tree -y
 sudo apt-get install ascii -y
 sudo apt-get install mlocate -y
 
-wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
+wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
 echo source ~/.gdbinit-gef.py > ~/.gdbinit
 echo "set disassembly-flavor intel" >> ~/.gdbinit
-echo "layout regs" >> ~/.gdbinit
 echo "gef config context.show_registers_raw True" >> ~/.gdbinit
 
 bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
