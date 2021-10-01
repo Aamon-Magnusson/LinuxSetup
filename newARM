@@ -12,6 +12,7 @@ sudo apt-get install make -y
 sudo apt-get install gdb -y
 sudo apt-get install python3 -y
 sudo apt-get install wireshark -y
+sudo apt-get install whois -y
 sudo apt-get install yersinia -y
 sudo apt-get install net-tools -y
 sudo apt-get install htop -y
