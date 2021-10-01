@@ -29,6 +29,7 @@ sudo apt-get install neofetch -y
 sudo apt-get install tree -y
 sudo apt-get install ascii -y
 sudo apt-get install mlocate -y
+sudo apt-get install openssh-server -y
 
 wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
 echo source ~/.gdbinit-gef.py > ~/.gdbinit
