@@ -26,6 +26,9 @@ sudo apt-get install tree -y
 sudo apt-get install ascii -y
 sudo apt-get install mlocate -y
 
+sudo apt-get install git -y
+wget -O ~/.vimrc -q https://raw.githubusercontent.com/Aamon-Magnusson/LinuxSetup/main/vimrc
+
 wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
 echo source ~/.gdbinit-gef.py > ~/.gdbinit
 echo "gef config context.show_registers_raw True" >> ~/.gdbinit
