@@ -34,10 +34,10 @@ echo source ~/.gdbinit-gef.py > ~/.gdbinit
 echo "gef config context.show_registers_raw True" >> ~/.gdbinit
 
 # setup ssh
-apt-get install openssh-server
-update-rc.d -f ssh remove
-update-rc.d -f ssh defaults
-cd /etc/ssh/
-rm ssh_host_*
-dpkg-reconfigure openssh-server
-sudo service ssh restart
+#apt-get install openssh-server
+#update-rc.d -f ssh remove
+#update-rc.d -f ssh defaults
+#cd /etc/ssh/
+#rm ssh_host_*
+#dpkg-reconfigure openssh-server
+#sudo service ssh restart
