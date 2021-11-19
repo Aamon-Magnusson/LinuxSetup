@@ -13,14 +13,14 @@ sudo apt-get install gdb -y
 sudo apt-get install python3 -y
 sudo apt-get install wireshark -y
 sudo apt-get install whois -y
-sudo apt-get install yersinia -y
+#sudo apt-get install yersinia -y
 sudo apt-get install net-tools -y
 sudo apt-get install htop -y
 sudo apt-get install nasm -y
 sudo apt-get install ld -y
 sudo apt-get install as -y
 sudo apt-get install vim -y
-sudo apt-get install bless -y
+#sudo apt-get install bless -y
 sudo apt-get install neofetch -y
 sudo apt-get install tree -y
 sudo apt-get install ascii -y
