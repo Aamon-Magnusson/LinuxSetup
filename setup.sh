@@ -1,5 +1,7 @@
 #! /bin/bash
 
+sudo apt-get install neovim vim fish
+
 ln -s /run/media/$USER ~/Drives
 
 git clone https://github.com/Aamon-Magnusson/Dotfiles
