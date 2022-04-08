@@ -1,7 +1,11 @@
-This is a set of scirtps to get usefull applications on a new debian based linux machines.
+# Debian Dotfiles
 
-It includes both x86 systems and ARM.
+My main do files are meant for Arch systems, and some of the dependencies are a little messy on other systems.
 
-This also includes my vimrc
+## Installation
 
-This is going to under-go some changes soon, I would like to have this setup so that my dotfiles work on debian systems.
+```
+git clone https://github.com/Aamon-Magnusson/DebianSetup
+cd DebianSetup
+./setup.sh
+```
