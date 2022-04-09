@@ -11,6 +11,8 @@ cp Dotfiles/vim ~/.vim
 cp Dotfiles/vimrc ~/.vimrc
 git clone https://github.com/dracula/vim.git ~/.vim/pack/themes/start/dracula
 
+sudo rm -rf Dotfiles
+
 cp fish ~/.config/ -r
 cp bashrc ~/.bashrc
 [[ ! $(grep "exec fish" $HOME/.zshrc) ]] && echo "exec fish" >> ~/.zshrc
