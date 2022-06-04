@@ -94,7 +94,7 @@ abbr v "nvim"
 
 function h
 	set temp (history | fzf)
-	$temp
+	eval $temp
 end
 
 # ls aliases
