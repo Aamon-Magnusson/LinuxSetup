@@ -92,6 +92,11 @@ abbr p "sudo pacman"
 abbr ran "ranger"
 abbr v "nvim"
 
+function h
+	set temp (history | fzf)
+	$temp
+end
+
 # ls aliases
 abbr l "ls"
 abbr "la" "ls -al"
