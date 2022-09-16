@@ -4,6 +4,9 @@ My main dot files are meant for Arch systems, and some of the dependencies are a
 
 This repo is not intended to be my "home" dotfiles, just to make a Debian system feel like home if I need to.
 
+I know this works on rolling debian distros, like Kali.
+Static releases may take more tweaking.
+
 ## Installation
 
 ```
