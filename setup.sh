@@ -1,6 +1,6 @@
 #! /bin/bash
 
-sudo apt-get install neovim vim fish pandoc ccls npm fzf curl
+sudo apt-get install neovim vim fish pandoc ccls npm fzf curl fd-find
 
 ln -s /run/media/$USER ~/Drives
 
