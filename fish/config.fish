@@ -108,7 +108,7 @@ end
 alias grep "grep --color=auto"
 alias less "less --use-color"
 alias df "df --human-readable"
-abbr p "sudo pacman"
+abbr a "sudo apt-get "
 abbr ran "ranger"
 abbr v "nvim"
 alias h "set h (history | fzf --height=50 --border=rounded --prompt='>' --header='Select a command to re-run' --header-first --reverse ); $h"
@@ -120,9 +120,9 @@ end
 
 # ls aliases
 alias lsd "lsd --group-dirs first"
-abbr l "lsd"
-#abbr ls "lsd" # trying to force myself to use just l
-abbr "la" "lsd -al"
+abbr l "ls"
+#abbr ls "ls" # trying to force myself to use just l
+abbr "la" "ls -al"
 
 # movement commands
 abbr .. "cd .."
