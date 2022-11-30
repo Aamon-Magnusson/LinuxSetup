@@ -120,7 +120,7 @@ function h
 end
 
 # ls aliases
-alias lsd "lsd --group-dirs first"
+#alias lsd "lsd --group-dirs first"
 abbr l "ls"
 #abbr ls "ls" # trying to force myself to use just l
 abbr "la" "ls -al"
@@ -148,7 +148,7 @@ abbr gm "git mergetool"
 # export PATH="$HOME/gems/bin:$PATH"
 
 function jg
-	cd $(git rev-parse --show-toplevel) && bundle exec jekyll serve --trace
+	cd (git rev-parse --show-toplevel) && bundle exec jekyll serve --trace
 end
 
 function pwc
