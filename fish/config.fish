@@ -112,6 +112,7 @@ abbr a "sudo apt-get "
 abbr ran "ranger"
 abbr v "nvim"
 alias h "set h (history | fzf --height=50 --border=rounded --prompt='>' --header='Select a command to re-run' --header-first --reverse ); $h"
+abbr t "tmux"
 
 function h
 	set temp (history | fzf)
