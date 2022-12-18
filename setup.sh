@@ -12,7 +12,7 @@ cp vim ~/.vim
 cp vimrc ~/.vimrc
 git clone https://github.com/dracula/vim.git ~/.vim/pack/themes/start/dracula
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-cp tmux.con ~/.tmux.conf
+cp tmux.conf ~/.tmux.conf
 
 cp fish ~/.config/ -r
 cp bashrc ~/.bashrc
