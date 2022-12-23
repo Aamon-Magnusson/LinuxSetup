@@ -1,16 +1,20 @@
 #! /bin/bash
 
-sudo apt-get install neovim vim fish pandoc ccls npm fzf curl fd-find
+sudo apt-get install vim fish pandoc ccls npm fzf curl fd-find
+
+# install neovim
+sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen
+git clone https://github.com/neovim/neovim
+cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+git checkout stable
+sudo make install
+cd ..
 
 ln -s /run/media/$USER ~/Drives
 
 sudo rm ~/.config/nvim -r
 cp nvim ~/.config/ -r
-git clone https://github.com/dracula/vim.git ~/.config/nvim/pack/themes/start/dracula
-sudo npm i -g vim-language-server pyright bash-language-server live-server
-cp vim ~/.vim
 cp vimrc ~/.vimrc
-git clone https://github.com/dracula/vim.git ~/.vim/pack/themes/start/dracula
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp tmux.conf ~/.tmux.conf
 
