@@ -9,6 +9,7 @@ cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
 git checkout stable
 sudo make install
 cd ..
+rm neovim -rf
 
 ln -s /run/media/$USER ~/Drives
 
