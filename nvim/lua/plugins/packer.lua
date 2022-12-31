@@ -77,6 +77,7 @@ return require('packer').startup(function(use)
 	use { 'lukas-reineke/indent-blankline.nvim' }
 	use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
 	use { "alec-gibson/nvim-tetris" }
+	use { "folke/twilight.nvim" }
 
 	if packer_bootstrap then
 		require('packer').sync()
