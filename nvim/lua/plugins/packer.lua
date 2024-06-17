@@ -14,12 +14,16 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
 	use { 'wbthomason/packer.nvim' }
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.0',
+		'nvim-telescope/telescope.nvim', tag = '0.1.x',
 		-- or                            , branch = '0.1.x',
 		requires = { { 'nvim-lua/plenary.nvim' } }
 	}
 	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-	use { 'theprimeagen/harpoon' }
+	use {
+		"theprimeagen/harpoon",
+		branch = "harpoon2",
+		requires = { { 'nvim-lua/plenary.nvim' } }
+	}
 	use { 'mbbill/undotree' }
 	use {
 		'VonHeikemen/lsp-zero.nvim',
@@ -44,11 +48,11 @@ return require('packer').startup(function(use)
 	}
 	use { 'Mofiqul/dracula.nvim' }
 	vim.cmd [[colorscheme dracula]]
+	use { 'kyazdani42/nvim-web-devicons' }
 	use {
 		'nvim-lualine/lualine.nvim',
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
-	use { 'numToStr/Comment.nvim' }
 	use { "folke/which-key.nvim" }
 	use { 'm4xshen/autoclose.nvim' }
 	use {
@@ -56,13 +60,7 @@ return require('packer').startup(function(use)
 		requires = {
 			'nvim-tree/nvim-web-devicons', -- optional, for file icons
 		},
-		tag = 'nightly' -- optional, updated every week. (see issue #1193)
-	}
-	use {
-		'VonHeikemen/fine-cmdline.nvim',
-		requires = {
-			{ 'MunifTanjim/nui.nvim' }
-		}
+		--tag = 'nightly' -- optional, updated every week. (see issue #1193)
 	}
 	use {
 		"kylechui/nvim-surround",
@@ -73,11 +71,25 @@ return require('packer').startup(function(use)
 			})
 		end
 	}
-	-- use { "jubnzv/mdeval.nvim" }
 	use { 'lukas-reineke/indent-blankline.nvim' }
-	use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
+	require("ibl").setup {
+		scope = { enabled = true },
+	}
 	use { "alec-gibson/nvim-tetris" }
+	use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
 	use { "folke/twilight.nvim" }
+	use { "folke/zen-mode.nvim", config = function () require("zen-mode").setup({
+		-- configuration here, or leave empty to use defaults
+	}) end }
+	use {
+		"FabijanZulj/blame.nvim",
+		config = function()
+			require("blame").setup()
+		end
+	}
+	use { "airblade/vim-gitgutter" }
+	use { "norcalli/nvim-colorizer.lua" }
+	require("colorizer").setup()
 
 	if packer_bootstrap then
 		require('packer').sync()

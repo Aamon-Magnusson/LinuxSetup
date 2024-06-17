@@ -3,7 +3,7 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 -- Fix Undefined global 'vim'
-lsp.configure('sumneko_lua', {
+lsp.configure('lua_ls', {
     settings = {
         Lua = {
             diagnostics = {
@@ -21,7 +21,10 @@ lsp.on_attach(function(client, bufnr)
 		return
 	end
 
+	print("Attached to LSP")
+
 	vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+	vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
 	vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
 	vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)
 	vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, opts)
@@ -34,3 +37,10 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+require("mason").setup()
+require'lspconfig'.lua_ls.setup{}
+require'lspconfig'.rust_analyzer.setup{}
+require'lspconfig'.bashls.setup{}
+require'lspconfig'.pyright.setup{}
+require'lspconfig'.html.setup{}
